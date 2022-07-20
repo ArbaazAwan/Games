@@ -1,0 +1,9 @@
+﻿@model Games.ViewModels.GameViewModel
+
+ <h1>Games List</h1>
+<h2>@Model.Availability Games</h2>
+
+    @foreach (var games in Model.Games)
+    {
+        <partial name="_GameCard" model="games"></partial>
+    }

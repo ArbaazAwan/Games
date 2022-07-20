@@ -1,0 +1,8 @@
+﻿@model Games.ViewModels.HomeViewModel
+
+            <h1>Home</h1>
+<h2>Games of the Week</h2>
+@foreach (var game in Model.GamesOftheWeek) 
+{ 
+    <partial name="_GameCard" model="game" />
+}
